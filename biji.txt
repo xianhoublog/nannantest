@@ -1,0 +1,13 @@
+http://study.163.com/course/courseLearn.htm?courseId=1004094014#/learn/video?lessonId=1047962281&courseId=1004094014
+
+git --version
+git hear
+//list all the files
+ls -a   
+//creat an empty repository
+git init
+//check status , if show untracked then means it's empty
+git status
+
+//add file to repository
+git add git1.html

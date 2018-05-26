@@ -1,13 +1,37 @@
 http://study.163.com/course/courseLearn.htm?courseId=1004094014#/learn/video?lessonId=1047962281&courseId=1004094014
 
-git --version
-git hear
-//list all the files
-ls -a   
-//creat an empty repository
-git init
-//check status , if show untracked then means it's empty
-git status
+git group: 54498423@qq.com
 
-//add file to repository
+1. git --version
+2. git hear
+3 //list all the files
+ls -a   
+4 //creat an empty repository
+5 git init
+//check status , if show untracked then means it's empty
+6 git status
+
+7 //add file to catch
 git add git1.html
+
+8 //commit to repository
+git commit -m 'first commit'
+
+//Note before commit u need config following
+git config --global user.name Nannan
+git config --global user.email 154305664@qq.com
+
+//to show the config
+
+git config --list
+
+//to show the commit info
+git log
+
+9. how to add multiple file to repository?
+git add .
+git commit -m'add all files'
+
+
+10 
+git commit -am'version 1.0'

@@ -33,5 +33,59 @@ git add .
 git commit -m'add all files'
 
 
-10 
+10 commit with version
 git commit -am'version 1.0'
+git log --oneline
+
+11 commit with the same version after modify
+git add git1.html
+git commit --amend
+//how to quite?
+:wq enter to quite the edit mode
+
+
+12 , what if u changed a file which was wrong, u want to revert it back?
+modify the file
+git status
+git checkout -- git1.html
+
+12 what if u change multi files which was wrong , uwant to revert it back?
+modify the files
+git status
+git checkout -- .
+git status
+
+13 change version number
+modify file
+git status
+//add to catch zone
+git add .
+//revert back to workspace ,clear the catch zone
+git reset HEAD git1.html
+git status
+//reset the modify in the working direc
+
+
+14. waht if want to revert back to a version
+git reset 13220de5bc922 git1.html
+git status
+//put the catch to working directory
+git checkout -- git1.html
+//put the working directory to repository
+git commit -m 'revert back to the first commit'
+
+
+15 
+git add .
+git reset HEAD git1.html
+git checkout --git1.html
+git checkout git1.html
+git checkout -- git1.html
+
+git cancel operation
+1. git commit --amend - 撤销上一次提交， 并将暂存区的文件重新提交
+2. git  checkout -- filename 提取暂存区的文件， 并将其替换工作区的文件， 注意与git checkout branchname 的区别
+3. git reset HEAD filename  拉取最近一次提交的版本库中的这个文件到暂存区， 该操作不影响工作区
+
+
+第四课： git 文件删除

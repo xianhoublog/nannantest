@@ -89,3 +89,40 @@ git cancel operation
 
 
 第四课： git 文件删除
+1. delete 1 file 
+2 . git status
+3. git add .  将工作区添加到缓存区
+
+git rm git1.html 删除工作区和暂存区的文件
+
+//重命名git 为git3
+mv git2.html git3.html
+//添加到缓存区
+git add .
+
+5 git 分支
+查看已有分支命令：
+git branch
+
+创建分支命令：
+git branch nannan
+git mv git33 git4.html   
+
+切换分支
+git checkout nannan
+
+删除分支（必须切换到其他分支删除此分支， 不然会报错）
+git branch -d nannan
+
+改变分支名称
+git branch -m nannan nannan1
+
+创建分支并切换到新创建的分支
+git checkout -b dev
+
+
+git 分支及 指针
+git checkout master
+modify git1.html 
+提交一个新版本
+git commit -am 'master branch'
